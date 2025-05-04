@@ -1,0 +1,14 @@
+viii) Write a shell script to read and check if the directory / file exists or
+not, if not make the directory / file.
+#!/bin/bash
+
+echo "enter direcotry"
+read dir
+
+if [ -d "$dir" ]
+then
+echo "$dir exists"
+else
+echo "$dir dose not exists"
+mkdir $dir
+fi

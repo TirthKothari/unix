@@ -1,0 +1,42 @@
+xi) Write a shell script to perform operations on directory like: display
+name of current directory, display list of directory contents, create
+another directory — write contents on that and copy it to a suitable
+location in your home directory, etc.
+
+#!/bin/bash
+
+echo "Current directory : "
+pwd
+
+echo "list of current directory contents : "
+ls
+
+echo "enter new directory name : "
+read name
+mkdir $name
+echo "$name created"
+
+echo "Enter a name of new file to create in the $name directory : "
+read file
+cd $name
+touch "$file.txt"
+echo "$file created"
+
+echo "Enter data to to entered in the new file"
+read data
+echo $data > "$file.txt"
+echo "write successfull"
+
+
+echo "enter new dirctory name to be cratedt in home : "
+cd ..
+read nname
+mkdir $nname
+echo "$nname created"
+
+cp -r "$name" "$nname"
+echo "file of $name is copied to $nname"
+
+cd $nname
+ls
+ 

@@ -1,0 +1,12 @@
+vii) Write a shell script to compare two strings.
+#!/bin/bash
+
+str1="Tirth"
+str2="hello"
+
+if [[ $str1 == $str2 ]]
+then
+echo "$str1 = $str2"
+else
+echo "$str1 != $str2"
+Fi

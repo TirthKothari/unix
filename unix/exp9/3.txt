@@ -1,0 +1,21 @@
+iii) Write a script using sed command to replace all occurrences of a particular
+word in a given file.
+
+#!/bin/bash
+
+echo "Enter the file name:"
+read filename
+
+if [ ! -f "$filename" ]; then
+  echo "File does not exist."
+  exit 1
+fi
+
+echo "Enter the word to be replaced:"
+read old_word
+echo "Enter the new word:"
+read new_word
+
+sed -i "s/$old_word/$new_word/g" "$filename"
+
+echo "All occurrences of '$old_word' have been replaced with '$new_word'."

@@ -1,0 +1,10 @@
+1 - Write a script using grep command to find the number of words character,
+words and lines in a file.
+
+2 - Write a script using egrep command to display a list of specific types of
+files in the directory.
+
+3 = Write a script using sed command to replace all occurrences of a particular
+word in a given file.
+
+4 - Write a script using sed command to print duplicate lines in input

@@ -1,0 +1,25 @@
+vi) Write a shell script to search whether an element is present in the list
+or not.
+
+#!/bin/bash
+
+arr=(1 2 4 8 16 32 64 128)
+
+echo "enter num to find"
+read num
+flag=0
+for i in ${arr[@]}; do
+	if [ $num == $i ]
+	then
+	echo "$num found"
+	flag=0
+	break
+	else
+	flag=1
+	fi
+done
+
+if [ $flag == 1 ]
+then
+echo "$num not found"
+fi

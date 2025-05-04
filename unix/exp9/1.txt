@@ -1,0 +1,23 @@
+i) Write a script using grep command to find the number of words character,
+words and lines in a file.
+
+#!/bin/bash
+
+echo "enter the file name:"
+read filename
+
+
+
+if [ -f "$filename" ]; then
+	touch "$filename.txt"
+	echo "$filename created"
+else
+	echo "file exists"
+	
+fi
+char_count=$(grep -o . "$filename.txt" | wc -l)
+word_count=$(grep -oE '\w+' "$filename.txt" | wc -l)
+line_count=$(grep -c '' "$filename.txt")
+echo "Characters: $char_count"
+echo "Words: $word_count"
+echo "Lines: $line_count"

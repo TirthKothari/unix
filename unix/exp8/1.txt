@@ -1,0 +1,20 @@
+i) Write a shell script to perform arithmetic operations.
+#!/bin/bash
+
+a=10
+b=5
+
+echo "addition of $a and $b :"
+expr $a + $b
+
+echo "subtraction of $a and $b : "
+expr $a - $b
+
+echo "division of $a by $b : "
+expr $a / $b
+
+echo "$a mod $b : "
+expr $a % $b
+
+echo "$a multiplied by $b : "
+expr $a \* $b

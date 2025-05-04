@@ -1,0 +1,17 @@
+ii) Write a shell script to calculate simple interest.
+
+#!/bin/bash
+
+echo 'Enter principal amount'
+read pri_num
+
+echo 'Enter Annual rate in %'
+read rate
+
+echo 'Enter Time'
+read time
+
+simpl=$(( $pri_num * $rate * $time ))
+
+echo "simple interst is : "
+echo "`expr $simpl / 100`" 

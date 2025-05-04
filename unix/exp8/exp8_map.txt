@@ -1,0 +1,23 @@
+1 - Write a shell script to perform arithmetic operations.
+2 - Write a shell script to calculate simple interest.
+3 - Write a shell script to determine the largest among three integer numbers.
+4 - Write a shell script to determine if a given year is leap year or not.
+5 - Write a shell script to print the multiplication table of given numbers using while statement
+6 - Write a shell script to search whether an element is present in the list or not.
+7 - Write a shell script to compare two strings.
+8 - Write a shell script to read and check if the directory / file exists or not, if not make the directory / file.
+9 - Write a shell script to implement a menu-driven calculator using case statements.
+10 - Write a shell script to print following pattern:
+*
+*
+* *
+* * *
+
+11 - Write a shell script to perform operations on directory like: display
+name of current directory, display list of directory contents, create
+another directory — write contents on that and copy it to a suitable
+location in your home directory, etc.
+
+
+
+

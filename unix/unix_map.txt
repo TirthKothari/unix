@@ -1,0 +1,11 @@
+exp 1 ma no code
+exp 2 ma c++ pattern code
+exp 3 ma normal commands basics
+exp 4 basic file management commands and others
+exp 5 user management commands
+exp 6 process management commands
+exp 7  FCFS SJF code c++
+exp 8 Shell scripts
+exp 9 egrep grep commands
+exp 10 no code
+

@@ -1,0 +1,26 @@
+ii) Write a script using egrep command to display a list of specific types of
+files in the directory.
+#!/bin/bash
+
+echo "Entetr directory name: "
+read dir
+
+if [ -d "$dir" ]; then
+	echo "$dir exists"
+	cd $dir
+else
+	mkdir $dir
+	cd $dir
+	touch file1.txt
+	touch file2.txt
+	touch file3.sh
+	touch file4.py
+	touch file5.js
+fi
+
+
+echo "Enter the file extensions you want to search for (e.g., .txt .jpg .png):"
+read  ext
+
+
+ls "." | egrep "\.($ext)$"

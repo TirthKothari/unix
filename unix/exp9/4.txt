@@ -1,0 +1,14 @@
+iv) Write a script using sed command to print duplicate lines in input.
+
+#!/bin/bash
+
+echo -n "Enter the file name: "
+read filename
+
+if [ ! -f "$filename" ]; then
+  echo "File does not exist."
+  exit 1
+fi
+
+echo "Duplicate lines in the file:"
+sort "$filename" | uniq -d
